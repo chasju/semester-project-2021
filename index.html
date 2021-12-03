@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Genos:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@400;600;900&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,14 +23,10 @@
     <header>
       <div class="mobileheader__container">
         <div class="search__container">
-          <img
-            src="/assets/search-icon-mobile.png"
-            alt="search icon"
-            class="search__mobile"
-          />
+          <input type="search" name="search" class="search__icon" />
         </div>
         <div class="logo__container">
-          <a href="/index.html" 
+          <a href="/index.html"
             ><img src="/logo/museum-logo.png" alt="Museum logo" class="logo"
           /></a>
           <div class="logo__slogan">
@@ -39,7 +35,21 @@
           </div>
         </div>
         <div class="menu__container">
-          <img src="/assets/hamburger-menu-icon.png" alt="Hamburger menu" class="rocket__menu" />
+          <button class="rocket__menu">
+            <img
+              src="/assets/hamburger-menu-icon.png"
+              alt="Hamburger menu"
+              class="rocket__menu"
+            />
+          </button>
+          <div class="list">
+            <a href="/kids.html">For Kids And Teachers</a>
+            <a href="/researchers.html">For Researchers</a>
+            <a href="/explore.html">Exhibition Spaces</a>
+            <a href="/special-events.html">Special Events </a>
+            <a href="/contact.html">Contact Us</a>
+            <a href="/get-involved.html">Get Involved</a>
+          </div>
         </div>
       </div>
       <nav>
@@ -76,8 +86,8 @@
       </nav>
       <article>
         <h1 class="headline__desktop">explore together</h1>
-        <h1 class="headline__mobile">come join us</h1>
-        <p>
+        <h1 class="headline__mobile">Come join us</h1>
+        <p class="headline__p">
           Come join us at the Community Science Museum where we’re committed to
           making science accessible to all.
         </p>
@@ -88,26 +98,37 @@
       </article>
     </header>
     <main>
+      <div class="headline__img"></div>
       <article class="rocket__container">
-        <h2>The aim</h2>
-        <p>
-          of our museum is to create a space where everyone can experience the
-          wonders of our discoveries and perhaps even ignite a lifelong passion
-          to continue the exploration of the world around us.
-        </p>
+        <div class="rocket__text-container">
+          <h2>The aim</h2>
+          <p>
+            of our museum is to create a space where everyone can experience the
+            wonders of our discoveries and perhaps even ignite a lifelong
+            passion to continue the exploration of the world around us.
+          </p>
+        </div>
       </article>
       <article class="card__container">
         <section class="webelieve__card">
-          <div class="text__container">
+          <div class="webelieve__img"></div>
+          <div class="text__container-desktop">
             <h2>We believe</h2>
             <p>
               science should not be confined to the textbook, but brought to
               life through exhibits.
             </p>
           </div>
+          <div class="text__container-mobile">
+            <p>
+              We believe science should not be confined to the textbook, but
+              brought to life through exhibits.
+            </p>
+          </div>
         </section>
         <section class="thisis__card">
-          <div class="text__container">
+          <div class="thisis__img"></div>
+          <div class="text__container-desktop">
             <h2>This is</h2>
             <p>
               why we have over 1000 different exhibits on the many varied
@@ -117,10 +138,21 @@
               life at night when everyone’s gone home).
             </p>
           </div>
+          <div class="text__container-mobile">
+            <p>
+              This is why we have over 1000 different exhibits on the many
+              varied subjects of science to explore. Many of these exhibits are
+              designed for you to interact with and play around to see science
+              come to life (apart from the dinosaur exhibits – they only come to
+              life at night when everyone’s gone home).
+            </p>
+          </div>
         </section>
       </article>
       <article class="kids__container">
-        <section class="rocket__container">
+        <section class="rocket__kids-container">
+          <h2>Kids</h2>
+          <div class="kids__img"></div>
           <p>
             Are you a young person looking to learn more about science? Come on
             down to our museum, there’s plenty to see and do.
@@ -172,8 +204,8 @@
           <h3>Location</h3>
           <p>The museum is located at Vigeveien 22B</p>
           <p>4633 Kristiansand Norway</p>
-          <a href="#map" class="map__scroll">See Map</a>
-          <a href="/contact.html" class="map__jump">See Map</a>
+          <a href="#map" class="map__scroll">See map</a>
+          <a href="/contact.html" class="map__jump">See map</a>
         </section>
         <section class="admission__container">
           <h3>Admission</h3>
@@ -223,28 +255,33 @@
         <section class="food__container">
           <h3>Food and Drinks</h3>
           <p>
-            There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
+            There is a café attached to the museum where you can get light
+            lunches, soft drinks, coffee, snacks and more.
           </p>
         </section>
         <section class="shop__container">
           <h3>Shop</h3>
           <p>
-            Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
+            Our shop offers a range of memorabilia from the museum as well as
+            great gifts and activity packs that allow you to continue to explore
+            science even after you’ve left the museum.
           </p>
         </section>
-        <a href="/special-events.html" class="events">Get involved</a>
-        <a href="/get-involved.html" class="getinvolved">Get involved</a>
+        <a href="/special-events.html" class="events__mobile">Get involved</a>
+        <a href="/get-involved.html" class="getinvolved__desktop"
+          >Get involved</a
+        >
       </footer>
       <section class="contactform__container">
         <h2>Message us</h2>
         <form action="" method="get" class="form__container">
           <div class="form__name">
             <label for="name"></label>
-            <input type="text" name="name" class="input__name">
+            <input type="text" name="name" class="input__name" />
           </div>
           <div class="form__email">
             <label for="email"></label>
-            <input type="text" name="email" class="input__email">
+            <input type="text" name="email" class="input__email" />
           </div>
           <div class="form__subject">
             <label for="subject"></label>
@@ -259,12 +296,20 @@
           <div class="form__textarea">
             <label for="area"></label>
             <textarea name="area" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send" class="form__button">
+            <input type="submit" value="Send" class="form__button" />
           </div>
         </form>
       </section>
       <section id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.699314250057!2d8.0293412!3d58.1621192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638023575652699%3A0x5acfe1edf2bc8870!2sVigeveien%2022B%2C%204633%20Kristiansand!5e0!3m2!1sen!2sno!4v1638366936750!5m2!1sen!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.699314250057!2d8.0293412!3d58.1621192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638023575652699%3A0x5acfe1edf2bc8870!2sVigeveien%2022B%2C%204633%20Kristiansand!5e0!3m2!1sen!2sno!4v1638366936750!5m2!1sen!2sno"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="map"
+        ></iframe>
       </section>
     </aside>
   </body>
