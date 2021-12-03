@@ -1,18 +1,87 @@
+*,
+:after. :before {
+  box-sizing: border-box;
+}
+
+:root {
+  --button: #68abf9;
+  --purple: #e3dcf2;
+  --aside: #0a1927;
+  --hover: #f48f3d;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  background-color: grey;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  background: radial-gradient(#2b4165, #0a1927);
 }
 
 body ul {
   list-style-type: none;
 }
+
+/*Mobile*/
+
+.mobileheader__container {
+  background: red;
+  margin: auto;
+  padding: 20px;
+  height: 270px;
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo__container {
+  width: 100%;
+  background-color: blue;
+  text-align: center;
+}
+
+.logo {
+  width: 70%;
+  min-width: 160px;
+}
+
+.museum__name {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.slogan {
+  color: #fff;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.rocket__menu {
+  width: 50px;
+}
+
+.search__mobile {
+  width: 45px;
+}
+
+/*Hidden*/
+
+nav {
+  display: none;
+}
+
+/*/Hidden*/
+
+/*/Mobile*/
 
 /*
 
