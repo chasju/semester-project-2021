@@ -251,6 +251,14 @@ h3 {
   border-radius: 0 25px 0 25px;
 }
 
+.cta__kids {
+  justify-content: flex-end;
+}
+
+.cta__kids a {
+  width: 150px;
+}
+
 /*/cta buttons*/
 
 /*Rocket bubble*/
@@ -302,12 +310,15 @@ h3 {
   margin: auto;
   border-radius: 0 50px 0 50px;
   background-size: cover;
+  background-position-y: 0;
   background-repeat: no-repeat;
 }
 
 .thisis__img {
   background-image: url(/images/vr-red.jpg);
   width: 70%;
+  max-width: 375px;
+  background-position-y: -100px;
 }
 
 .kids__img {
@@ -351,16 +362,14 @@ h3 {
   margin: auto;
 }
 
-.get__involved {
-  margin-top: 50px;
-}
-
+.get__involved,
 .news section,
 .get__involved section,
 .robot__paragraph,
 .planet__paragraph,
 .evolution__section,
-.ecology__section {
+.ecology__section,
+.kids__mobile section {
   margin-top: 60px;
 }
 
@@ -373,7 +382,11 @@ h3 {
 .planets__img,
 .skeleton__img,
 .mammoth__img,
-.ice__img {
+.ice__img,
+.math__img,
+.vrpaint__img,
+.child__img,
+.blocks__img {
   width: 100%;
   max-width: 375px;
   margin: auto;
@@ -415,6 +428,43 @@ h3 {
 .ice__img {
   height: 230px;
   background-image: url(/images/global-warming.jpg);
+}
+
+.math__img {
+  height: 150px;
+  background-image: url(/images/math-problem.jpg);
+  border-radius: 0;
+}
+
+.kids__mobile .mammoth__img {
+  width: 100%;
+  height: 230px;
+}
+
+.vrpaint__img {
+  height: 230px;
+  background-image: url(/images/vr-paint.jpg);
+}
+
+.child__img,
+.blocks__img {
+  height: 350px;
+  width: 250px;
+}
+
+.child__img {
+  background-image: url(/images/child-reading.jpg);
+}
+
+.blocks__img {
+  background-image: url(/images/toy.jpg);
+}
+
+.teachers__img {
+  height: 500px;
+  width: 100%;
+  background-position-y: unset;
+  margin-bottom: 50px;
 }
 
 /*/Content*/
@@ -490,7 +540,9 @@ nav,
 .getinvolved__desktop,
 .contactform__container,
 #map,
-.header__subsection-desktop {
+.header__subsection-desktop,
+.kids__header-desktop,
+.kids__desktop {
   display: none;
 }
 
