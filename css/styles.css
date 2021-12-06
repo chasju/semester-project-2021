@@ -356,12 +356,65 @@ h3 {
 }
 
 .news section,
-.get__involved section {
+.get__involved section,
+.robot__paragraph,
+.planet__paragraph,
+.evolution__section,
+.ecology__section {
   margin-top: 60px;
 }
 
 .special__events-mobile p {
   font-weight: 400;
+}
+
+.moon__img,
+.solarsystem__img,
+.planets__img,
+.skeleton__img,
+.mammoth__img,
+.ice__img {
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  margin-bottom: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0 50px 0 50px;
+}
+
+.moon__img {
+  height: 200px;
+  background-image: url(/images/moon-phases.jpg);
+}
+
+.solarsystem__img {
+  height: 440px;
+  background-image: url(/images/solar-system.png);
+  margin: 40px auto;
+}
+
+.planets__img {
+  height: 190px;
+  width: 80%;
+  background-image: url(/images/rob-the-robot.jpg);
+}
+
+.skeleton__img {
+  height: 220px;
+  background-image: url(/images/skeleton-bw.jpg);
+}
+
+.mammoth__img {
+  height: 170px;
+  width: 80%;
+  margin: 40px auto;
+  background-image: url(/images/mammoth.jpg);
+}
+
+.ice__img {
+  height: 230px;
+  background-image: url(/images/global-warming.jpg);
 }
 
 /*/Content*/
@@ -436,7 +489,8 @@ nav,
 .contact__scroll,
 .getinvolved__desktop,
 .contactform__container,
-#map {
+#map,
+.header__subsection-desktop {
   display: none;
 }
 
