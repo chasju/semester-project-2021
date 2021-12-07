@@ -78,9 +78,15 @@ body ul {
 }
 
 .rocket__menu {
-  width: 47px;
+  width: 55px;
   background-color: transparent;
   border: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rocket__menu-img {
+  width: 45px;
 }
 
 .mobileheader__container {
@@ -95,6 +101,10 @@ body ul {
   background-image: url(/assets/search-icon-mobile.png);
   background-size: 40px;
   background-repeat: no-repeat;
+}
+
+.search__container {
+  width: 60px;
 }
 
 .search__container input {
@@ -135,6 +145,7 @@ body ul {
   width: 100%;
   height: 80vh;
   left: 0;
+  top: 30px;
   background: radial-gradient(#2b4165, #0a1927);
   opacity: 98%;
   border-radius: 20px;
@@ -215,7 +226,8 @@ h3 {
 .cta__container a,
 .rocket__kids-container a,
 .map__jump,
-.contact__jump {
+.contact__jump,
+.form__button {
   font-family: "genos", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
   font-size: 1.2rem;
@@ -231,7 +243,8 @@ h3 {
 
 .cta__container a:nth-child(1),
 .map__jump,
-.contact__jump {
+.contact__jump,
+.form__button {
   border-radius: 0 25px 0 25px;
 }
 
@@ -257,6 +270,12 @@ h3 {
 
 .cta__kids a {
   width: 150px;
+}
+
+.form__button {
+  border: 0;
+  margin-top: 20px;
+  position: relative;
 }
 
 /*/cta buttons*/
@@ -362,14 +381,8 @@ h3 {
   margin: auto;
 }
 
-.get__involved,
-.news section,
-.get__involved section,
-.robot__paragraph,
-.planet__paragraph,
-.evolution__section,
-.ecology__section,
-.kids__mobile section {
+article,
+section {
   margin-top: 60px;
 }
 
@@ -386,7 +399,10 @@ h3 {
 .math__img,
 .vrpaint__img,
 .child__img,
-.blocks__img {
+.blocks__img,
+.astronaut__img-mobile,
+.human__img,
+.microscrope__img {
   width: 100%;
   max-width: 375px;
   margin: auto;
@@ -446,18 +462,33 @@ h3 {
   background-image: url(/images/vr-paint.jpg);
 }
 
+.section__three-img {
+  position: relative;
+  height: 430px;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+}
+
 .child__img,
 .blocks__img {
-  height: 350px;
-  width: 250px;
+  position: absolute;
 }
 
 .child__img {
   background-image: url(/images/child-reading.jpg);
+  height: 300px;
+  width: 215px;
+  z-index: 2;
 }
 
 .blocks__img {
   background-image: url(/images/toy.jpg);
+  height: 300px;
+  width: 210px;
+  z-index: 1;
+  top: 100px;
+  right: 0;
 }
 
 .teachers__img {
@@ -466,6 +497,94 @@ h3 {
   background-position-y: unset;
   margin-bottom: 50px;
 }
+
+.astronaut__img-mobile {
+  height: 250px;
+  background-image: url(/images/astronaut.jpg);
+}
+
+.human__img {
+  height: 400px;
+  background-image: url(/images/research-body.jpg);
+}
+
+.microscrope__img {
+  height: 200px;
+  background-image: url(/images/research-microscrope.jpg);
+  margin-top: 60px;
+}
+
+/*Contact form*/
+
+.contactform__mobile {
+  margin: auto;
+  width: 100%;
+  max-width: 375px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.input__name,
+.input__email,
+.input__subject,
+.input__textarea {
+  background-color: var(--purple);
+  opacity: 0.8;
+  border: none;
+  border-radius: 0 5px 0 5px;
+  height: 30px;
+  text-align: center;
+  font-family: "quicksand", Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+  color: var(--aside);
+}
+
+.input__subject {
+  width: 225px;
+}
+
+.input__textarea {
+  width: 225px;
+  height: 170px;
+}
+
+/*/Contact form*/
+
+/*Map*/
+
+.map__mobile {
+  width: 100%;
+  max-width: 375px;
+  height: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/*/Map*/
 
 /*/Content*/
 
@@ -542,7 +661,8 @@ nav,
 #map,
 .header__subsection-desktop,
 .kids__header-desktop,
-.kids__desktop {
+.kids__desktop,
+.researcher__desktop {
   display: none;
 }
 
