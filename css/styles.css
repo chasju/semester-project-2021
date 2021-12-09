@@ -166,6 +166,7 @@ body ul {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+  z-index: 20;
 }
 
 .list a {
@@ -718,7 +719,9 @@ nav,
   .headline__mobile,
   .headline__img,
   .text__container-mobile,
-  .rocket__kids-container h2 {
+  .rocket__kids-container h2,
+  .kids__header-mobile,
+  .kids__mobile {
     display: none;
   }
 
@@ -954,6 +957,44 @@ nav,
     z-index: 10;
   }
 
+  /*Kids desktop*/
+
+  .kids__header-desktop {
+    display: block;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .math__img {
+    max-width: unset;
+    width: 100%;
+    height: 350px;
+  }
+
+  .math__headlines {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .math__headlines h1,
+  .math__headlines h2 {
+    text-align: left;
+  }
+
+  .math__headlines h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .math__headlines h2 {
+    width: 450px;
+  }
+
+  /*/Kids desktop*/
+
   /*/Header*/
 
   /*Main*/
@@ -1107,7 +1148,110 @@ nav,
     left: -200px;
   }
 
+  /*Kids main*/
+
+  .kids__desktop {
+    display: block;
+  }
+
+  .kids__desktop section {
+    width: 350px;
+    height: 500px;
+    background-image: url(/images/starry-sky.jpg);
+    border-radius: 20px;
+  }
+
+  .card__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .card__section .mammoth__img,
+  .card__section .skeleton__img {
+    height: 190px;
+  }
+
+  .card__section .skeleton__img {
+    width: 80%;
+  }
+
+  .card__section .card__background-overlay {
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .card__section .section__one,
+  .card__section .section__two {
+    position: relative;
+    z-index: 10;
+    width: 300px;
+  }
+
+  .section__one h2,
+  .section__two h2 {
+    text-align: left;
+    margin-bottom: -15px;
+  }
+
+  .section__two {
+    margin-bottom: 30px;
+  }
+
+  .section__one p {
+    width: 100%;
+  }
+
+  .card__flex {
+    width: 80%;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card__section-two {
+    position: relative;
+    right: -200px;
+  }
+
+  .kids__desktop .card__section-three {
+    background-color: red;
+    width: 80%;
+    height: 600px;
+    margin: 100px auto 0 auto;
+  }
+
+  .kids__desktop .rocket__container {
+    top: unset;
+    bottom: -200px;
+    right: unset;
+    left: 40px;
+  }
+
+  .vr__paint-img {
+    width: 80%;
+    height: 300px;
+    border-radius: 0 50px;
+    background-image: url(/images/vr-paint.jpg);
+    background-size: 100%;
+    position: absolute;
+    top: 40px;
+  }
+
+  /*/Kids main*/
+
   /*/Main*/
+}
+
+@media (min-width: 1275px) {
+  .card__section-two {
+    right: 0;
+  }
 }
 
 @media (min-width: 1350px) {
