@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header__desktop">
+      <div class="background__overlay"></div>
       <div class="mobileheader__container">
         <div class="search__container">
           <input type="search" name="search" class="search__icon" />
@@ -84,7 +85,7 @@
           <p>Search</p>
         </div>
       </nav>
-      <article>
+      <article class="headsection__desktop">
         <h1 class="headline__desktop">explore together</h1>
         <h1 class="headline__mobile">Come join us</h1>
         <p class="headline__p">
@@ -109,8 +110,10 @@
           </p>
         </div>
       </article>
+      <div class="absolute__fix"></div>
       <article class="card__container">
         <section class="webelieve__card">
+          <div class="card__background-overlay"></div>
           <div class="webelieve__img"></div>
           <div class="text__container-desktop">
             <h2>We believe</h2>
@@ -127,6 +130,7 @@
           </div>
         </section>
         <section class="thisis__card">
+          <div class="card__background-overlay"></div>
           <div class="thisis__img"></div>
           <div class="text__container-desktop">
             <h2>This is</h2>
@@ -151,6 +155,7 @@
       </article>
       <article class="kids__container">
         <section class="rocket__kids-container">
+          <div class="rocket__bubble"></div>
           <h2>Kids</h2>
           <div class="kids__img"></div>
           <p>
@@ -165,12 +170,23 @@
       </article>
     </main>
     <aside>
+      <article class="logo__desktop">
+        <div class="logo__container">
+          <a href="/index.html"
+            ><img src="/logo/museum-logo.png" alt="Museum logo" class="logo"
+          /></a>
+          <div class="logo__slogan">
+            <p class="museum__name">Community Science Museum</p>
+            <p class="slogan">- Explore Together</p>
+          </div>
+        </div>
+      </article>
       <article class="events__container">
         <h2 class="events__headline">Special Events</h2>
         <h2>News</h2>
         <section class="events__section">
           <h2>Visiting Professor Of Aeronautics</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             It is our pleasure to announce that Prof Sheila Widnall from the
             Massachusetts Institute of Technology will be delivering 3 lectures
             on the development of aeronautics and where the future lies in this
@@ -179,7 +195,7 @@
         </section>
         <section class="events__section">
           <h2>Night in the Museum</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             Get your family together for an exciting night in the museum as you
             sleep over beside dinosaurs and science displays. Bring your own
             sleeping bag and get ready to rough it as we go exploring the
@@ -188,7 +204,7 @@
         </section>
         <section class="events__section">
           <h2>Energetica Exhibition</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             On loan from the NEMO Science Museum in Amsterdam, the Energetica
             exhibition is coming to the Community Science Museum. It’s a series
             of installations that allow visitors to experience the power of the
@@ -273,19 +289,29 @@
         >
       </footer>
       <section class="contactform__container">
-        <h2>Message us</h2>
+        <h2 id="contact">Message us</h2>
         <form action="" method="get" class="form__container">
           <div class="form__name">
             <label for="name"></label>
-            <input type="text" name="name" class="input__name" />
+            <input
+              type="text"
+              name="name"
+              class="input__name"
+              placeholder="Full Name"
+            />
           </div>
           <div class="form__email">
             <label for="email"></label>
-            <input type="text" name="email" class="input__email" />
+            <input
+              type="text"
+              name="email"
+              class="input__email"
+              placeholder="e-mail"
+            />
           </div>
           <div class="form__subject">
             <label for="subject"></label>
-            <select name="subject" id="">
+            <select name="subject" class="input__subject">
               <option value="">Who are you?</option>
               <option value="teacher">I'm a teacher</option>
               <option value="researcher">I'm a researcher</option>
@@ -295,12 +321,18 @@
           </div>
           <div class="form__textarea">
             <label for="area"></label>
-            <textarea name="area" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name="area"
+              class="input__textarea"
+              cols="30"
+              rows="10"
+              placeholder="Start Writing"
+            ></textarea>
             <input type="submit" value="Send" class="form__button" />
           </div>
         </form>
       </section>
-      <section id="map">
+      <section id="map" class="map__mobile">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.699314250057!2d8.0293412!3d58.1621192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638023575652699%3A0x5acfe1edf2bc8870!2sVigeveien%2022B%2C%204633%20Kristiansand!5e0!3m2!1sen!2sno!4v1638366936750!5m2!1sen!2sno"
           width="400"
