@@ -1212,6 +1212,7 @@ nav,
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-flow: wrap;
   }
 
   .card__section-two {
@@ -1220,7 +1221,6 @@ nav,
   }
 
   .kids__desktop .card__section-three {
-    background-color: red;
     width: 80%;
     height: 600px;
     margin: 100px auto 0 auto;
@@ -1243,6 +1243,80 @@ nav,
     top: 40px;
   }
 
+  .kids__footer {
+    background-color: var(--aside);
+    margin-top: 300px;
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .kids__footer section {
+    background-image: unset;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .vr__red {
+    width: 300px;
+    height: 400px;
+    background-image: url(/images/vr-red.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 50px;
+  }
+
+  .teachers__text,
+  .holidays__text {
+    width: 400px;
+  }
+
+  .teachers__text h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .teachers__text .contact__scroll,
+  .holidays__text .contact__scroll {
+    width: 140px;
+  }
+
+  .holiday__img {
+    width: 300px;
+    height: 400px;
+    position: relative;
+  }
+
+  .kids__img-kids,
+  .blocks__img-kids {
+    width: 200px;
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 50px;
+  }
+
+  .kids__img-kids {
+    background-image: url(/images/child-reading.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .blocks__img-kids {
+    background-image: url(/images/toy.jpg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   /*/Kids main*/
 
   /*/Main*/
@@ -1254,7 +1328,7 @@ nav,
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1354px) {
   .kids__container {
     top: -290px;
     width: 100%;
@@ -1272,5 +1346,9 @@ nav,
     top: 170px;
     left: unset;
     right: 30px;
+  }
+
+  .kids__footer {
+    height: 1220px;
   }
 }
