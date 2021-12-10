@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+  <body class="no__background">
     <header>
       <div class="mobileheader__container">
         <div class="search__container">
@@ -84,12 +84,12 @@
           <p>Search</p>
         </div>
       </nav>
-      <article>
+      <article class="header__researchers">
         <div class="astronaut__img-desktop"></div>
         <h1 class="headline__desktop">For Researchers</h1>
         <h1 class="headline__mobile">For Researchers</h1>
         <div class="astronaut__img-mobile"></div>
-        <p class="text__container-mobile">
+        <p class="text__container-mobile text__container-desktop">
           Are you looking to get involved with our team of researchers and
           academics?
         </p>
@@ -97,8 +97,8 @@
     </header>
     <main>
       <div class="researcher__desktop">
+        <div class="microscrope__img"></div>
         <section class="info__section">
-          <div class="microscope__img"></div>
           <div class="telescope">
             <div class="telescope__img"></div>
             <p class="headline__p">
@@ -108,44 +108,69 @@
           </div>
           <div class="rocket__big">
             <div class="rocket__big-img"></div>
-            <p class="text__container-mobile">
+            <p class="headline__p">
               We have online records, laboratory space, and a working
               relationship with a number of universities around the country.
             </p>
           </div>
         </section>
-        <section class="contactform__container">
+        <section class="contactform__container contact__container-researchers">
           <h2>
             Don’t hesitate to contact us and we will figure out what is best for
             you.
           </h2>
-          <form action="" method="get" class="form__container">
-            <div class="form__name">
-              <label for="name"></label>
-              <input type="text" name="name" class="input__name" />
+          <form
+            action=""
+            method="get"
+            class="form__container form__container-researchers"
+          >
+            <div class="form__left">
+              <div class="form__name">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  name="name"
+                  class="input__name"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="form__email">
+                <label for="email"></label>
+                <input
+                  type="text"
+                  name="email"
+                  class="input__email"
+                  placeholder="e-mail"
+                />
+              </div>
+              <div class="form__subject">
+                <label for="subject"></label>
+                <select name="subject" class="input__subject">
+                  <option value="">Who are you?</option>
+                  <option value="teacher">I'm a teacher</option>
+                  <option value="researcher">I'm a researcher</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="none">None of the above</option>
+                </select>
+              </div>
             </div>
-            <div class="form__email">
-              <label for="email"></label>
-              <input type="text" name="email" class="input__email" />
-            </div>
-            <div class="form__subject">
-              <label for="subject"></label>
-              <select name="subject" id="">
-                <option value="">Who are you?</option>
-                <option value="teacher">I'm a teacher</option>
-                <option value="researcher">I'm a researcher</option>
-                <option value="feedback">Feedback</option>
-                <option value="none">None of the above</option>
-              </select>
-            </div>
-            <div class="form__textarea">
-              <label for="area"></label>
-              <textarea name="area" id="" cols="30" rows="10"></textarea>
-              <input type="submit" value="Send" class="form__button" />
+            <div class="form__right">
+              <div class="form__textarea">
+                <label for="area"></label>
+                <textarea
+                  name="area"
+                  class="input__textarea input__textarea-researchers"
+                  cols="30"
+                  rows="10"
+                  placeholder="Start Writing"
+                ></textarea>
+                <input type="submit" value="Send" class="form__button" />
+              </div>
             </div>
           </form>
         </section>
       </div>
+      <div class="human__img human__img-researchers"></div>
       <article class="researchers__mobile">
         <div class="human__img"></div>
         <p class="text__container-mobile">
@@ -157,7 +182,6 @@
         <div class="cta__container cta__kids">
           <a href="/contact.html">Get in touch</a>
         </div>
-        <div class="microscrope__img"></div>
       </article>
     </main>
     <aside>
@@ -166,7 +190,7 @@
         <h2>News</h2>
         <section class="events__section">
           <h2>Visiting Professor Of Aeronautics</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             It is our pleasure to announce that Prof Sheila Widnall from the
             Massachusetts Institute of Technology will be delivering 3 lectures
             on the development of aeronautics and where the future lies in this
@@ -175,7 +199,7 @@
         </section>
         <section class="events__section">
           <h2>Night in the Museum</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             Get your family together for an exciting night in the museum as you
             sleep over beside dinosaurs and science displays. Bring your own
             sleeping bag and get ready to rough it as we go exploring the
@@ -184,7 +208,7 @@
         </section>
         <section class="events__section">
           <h2>Energetica Exhibition</h2>
-          <p>
+          <p class="text__container-mobile text__container-desktop">
             On loan from the NEMO Science Museum in Amsterdam, the Energetica
             exhibition is coming to the Community Science Museum. It’s a series
             of installations that allow visitors to experience the power of the
@@ -281,7 +305,7 @@
           </div>
           <div class="form__subject">
             <label for="subject"></label>
-            <select name="subject" id="">
+            <select name="subject" class="input__subject">
               <option value="">Who are you?</option>
               <option value="teacher">I'm a teacher</option>
               <option value="researcher">I'm a researcher</option>
@@ -291,12 +315,17 @@
           </div>
           <div class="form__textarea">
             <label for="area"></label>
-            <textarea name="area" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name="area"
+              class="input__textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
             <input type="submit" value="Send" class="form__button" />
           </div>
         </form>
       </section>
-      <section id="map">
+      <section id="map" class="map__mobile">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.699314250057!2d8.0293412!3d58.1621192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638023575652699%3A0x5acfe1edf2bc8870!2sVigeveien%2022B%2C%204633%20Kristiansand!5e0!3m2!1sen!2sno!4v1638366936750!5m2!1sen!2sno"
           width="400"

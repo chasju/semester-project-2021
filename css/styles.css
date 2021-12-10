@@ -162,7 +162,7 @@ body ul {
 
 .rocket__menu:hover + .list,
 .rocket__menu:focus + .list {
-  display: flex;
+  display: inline-flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
@@ -172,7 +172,7 @@ body ul {
 .list a {
   color: #fff;
   font-family: "genos", Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
+  display: inline-block;
 }
 
 .list a:hover {
@@ -721,7 +721,11 @@ nav,
   .text__container-mobile,
   .rocket__kids-container h2,
   .kids__header-mobile,
-  .kids__mobile {
+  .kids__mobile,
+  .astronaut__img-mobile,
+  .human__img,
+  .cta__container,
+  .researcher__mobile {
     display: none;
   }
 
@@ -877,7 +881,6 @@ nav,
 
   nav div a {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -896,6 +899,10 @@ nav,
 
   .nav__search img {
     width: 20%;
+  }
+
+  .nav__explore img {
+    width: 25%;
   }
 
   .nav__search {
@@ -1318,6 +1325,145 @@ nav,
   }
 
   /*/Kids main*/
+
+  /*Researchers Main*/
+
+  .no__background {
+    background-image: unset;
+  }
+
+  .header__researchers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 930px;
+  }
+
+  .astronaut__img-desktop {
+    display: block;
+    width: 100%;
+    height: 450px;
+    background-image: url(/images/astronaut.jpg);
+  }
+
+  .header__researchers p,
+  .header__researchers h1 {
+    margin: 0 0 10px 10%;
+  }
+
+  .header__researchers h1 {
+    font-size: 3rem;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  }
+
+  .header__researchers p {
+    font-family: "genos", Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 350px;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .researcher__desktop {
+    display: block;
+  }
+
+  .researcher__desktop .microscrope__img {
+    display: block;
+    width: 80%;
+    min-width: 534px;
+    height: 350px;
+    max-width: unset;
+    margin-top: 15px;
+  }
+
+  .telescope__img,
+  .rocket__big-img {
+    width: 150px;
+    height: 122px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .telescope__img {
+    background-image: url(/assets/telescope-icon.png);
+  }
+
+  .rocket__big-img {
+    background-image: url(/assets/rocket-big-icon.png);
+  }
+
+  .telescope,
+  .rocket__big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 395px;
+    margin-bottom: 30px;
+  }
+
+  .telescope p,
+  .rocket__big p {
+    font-size: 0.9rem;
+    line-height: unset;
+    width: 300px;
+    margin: 0;
+  }
+
+  .info__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 140px;
+  }
+
+  .contact__container-researchers {
+    margin-top: 140px;
+  }
+
+  .contact__container-researchers h2 {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: auto;
+    max-width: 720px;
+  }
+
+  .form__left {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form__container-researchers {
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    max-width: 720px;
+    height: unset;
+  }
+
+  .input__textarea-researchers {
+    width: 400px;
+    height: 150px;
+  }
+
+  .human__img-researchers {
+    display: block;
+    width: 80%;
+    max-width: 720px;
+    height: 600px;
+    background-position-y: -150px;
+  }
+
+  /*/Researchers Main*/
 
   /*/Main*/
 }
