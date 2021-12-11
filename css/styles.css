@@ -676,7 +676,8 @@ nav,
 .kids__desktop,
 .researcher__desktop,
 .logo__desktop,
-.absolute__fix {
+.absolute__fix,
+.explore__desktop {
   display: none;
 }
 
@@ -725,7 +726,8 @@ nav,
   .astronaut__img-mobile,
   .human__img,
   .cta__container,
-  .researcher__mobile {
+  .researcher__mobile,
+  .explore__mobile {
     display: none;
   }
 
@@ -765,7 +767,8 @@ nav,
   .events__container,
   .contactform__container,
   #map,
-  footer {
+  footer,
+  .logo__desktop {
     display: block;
   }
 
@@ -1464,6 +1467,209 @@ nav,
   }
 
   /*/Researchers Main*/
+
+  /*Explore Header*/
+
+  .header__explore {
+    width: 100%;
+    height: 800px;
+    position: relative;
+  }
+
+  .starrysky__header {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(/images/moon-phases.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .starrysky__header::after {
+    content: "";
+    background-image: url(/images/starry-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    opacity: 0.7;
+  }
+
+  .header__explore .headline__desktop {
+    position: absolute;
+    top: 430px;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+    z-index: 1;
+  }
+
+  .header__subsection-desktop {
+    position: absolute;
+    top: 560px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .card__overlay-explore {
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+  }
+
+  .header__subsection-desktop h2 {
+    margin-bottom: -5px;
+  }
+
+  .header__subsection-desktop p {
+    width: 530px;
+  }
+
+  /*/Explore Header*/
+
+  /*Explore Main*/
+
+  .explore__desktop {
+    display: block;
+  }
+
+  .cosmology {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .starrysky__background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url(/images/starry-sky.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 50px;
+    z-index: 1;
+  }
+
+  .overlay__explore-section {
+    height: 400px;
+  }
+
+  .solar__system-img,
+  .robtherobot__img {
+    width: 300px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0 50px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .solar__system-img {
+    background-image: url(/images/solar-system.png);
+  }
+
+  .robtherobot__img {
+    background-image: url(/images/rob-the-robot.jpg);
+    width: 300px;
+    height: 230px;
+  }
+
+  .robotics__text-container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .robotics__text-container p {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .robotics__text-container h2 {
+    text-align: left;
+    margin-bottom: -20px;
+  }
+
+  .robotics__section,
+  .cosmology__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .article__container {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .article__container h2 {
+    text-align: left;
+  }
+
+  .evolution {
+    width: 85%;
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .evolution__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .container__explore {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container__explore p {
+    width: 100%;
+    height: 200px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  .skeleton__img-explore,
+  .mammoth__img-explore,
+  .pollution__img {
+    width: 100%;
+    height: 220px;
+    margin: unset;
+  }
+
+  .pollution__img {
+    background-image: url(/images/pollution.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -180px;
+    border-radius: 0 50px;
+  }
+
+  /*/Explore Main*/
 
   /*/Main*/
 }
