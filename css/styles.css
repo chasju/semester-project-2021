@@ -677,7 +677,8 @@ nav,
 .researcher__desktop,
 .logo__desktop,
 .absolute__fix,
-.explore__desktop {
+.explore__desktop,
+.main__get-involved {
   display: none;
 }
 
@@ -727,7 +728,8 @@ nav,
   .human__img,
   .cta__container,
   .researcher__mobile,
-  .explore__mobile {
+  .explore__mobile,
+  .headline__p-get {
     display: none;
   }
 
@@ -1670,6 +1672,98 @@ nav,
   }
 
   /*/Explore Main*/
+
+  /*Get Involved Main*/
+
+  .main__get-involved {
+    display: block;
+  }
+
+  .header__desktop {
+    background-image: url(/images/hallway.jpg);
+    background-size: 100%;
+    height: 700px;
+  }
+
+  .background__overlay {
+    height: 700px;
+    opacity: 0.5;
+  }
+
+  .headsection__get h1 {
+    font-size: 4rem;
+  }
+
+  .get__text-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__scroll-get {
+    align-self: end;
+    width: 125px;
+  }
+
+  .main__get-involved section {
+    width: 85%;
+    max-width: 700px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+  }
+
+  .dome__img {
+    width: 320px;
+    height: 450px;
+    background-image: url(/images/dome.jpg);
+    background-size: 100%;
+    border-radius: 0 50px;
+  }
+
+  .text__section-get {
+    font-size: 0.9rem;
+  }
+
+  .text__section-get:nth-child(2) {
+    margin-bottom: 0px;
+  }
+
+  .main__get-involved h2 {
+    text-align: left;
+    margin-bottom: -20px;
+    margin-left: 30px;
+  }
+
+  .ant__img,
+  .museum__img {
+    width: 340px;
+    height: 240px;
+    border-radius: 0 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+  }
+
+  .ant__img {
+    background-image: url(/images/ant.jpg);
+  }
+
+  .museum__img {
+    background-image: url(/images/museum.jpg);
+  }
+
+  .main__get-involved article:nth-child(3) section {
+    align-items: flex-start;
+  }
+
+  .main__get-involved article:nth-child(3) section h2 {
+    margin-top: 0;
+  }
+
+  /*/Get Involved Main*/
 
   /*/Main*/
 }
