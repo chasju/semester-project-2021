@@ -23,8 +23,14 @@
     <header class="header__desktop">
       <div class="background__overlay"></div>
       <div class="mobileheader__container">
-        <div class="search__container">
-          <input type="search" name="search" class="search__icon" />
+        <div class="search__input-mobile">
+          <label for="search__toggle"
+            ><img class="search__icon-mobile" src="/assets/search-icon-mobile.png" alt=""
+          /></label>
+          <input type="checkbox" name="search" id="search__toggle" />
+          <div class="search__container">
+            <input type="search" name="search" class="search__icon" />
+          </div>
         </div>
         <div class="logo__container">
           <a href="/index.html"
@@ -36,9 +42,10 @@
           </div>
         </div>
         <div class="menu__container">
-          <button class="rocket__menu">
-            <img src="/assets/hamburger-menu-icon.png" alt="Hamburger menu" class="rocket__menu" />
-          </button>
+          <label for="toggle">
+            <img src="/assets/hamburger-menu-icon.png" alt="Hamburger menu" class="rocket__menu"
+          /></label>
+          <input type="checkbox" name="toggle" id="toggle" />
           <div class="list">
             <a id="active" href="/index.html">Home</a>
             <a href="/kids.html">For Kids And Teachers</a>
