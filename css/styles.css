@@ -786,6 +786,7 @@ nav,
     display: grid;
     margin: auto;
     grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "aside header header"
       "aside main main"
@@ -827,6 +828,7 @@ nav,
     text-align: left;
     width: 75%;
     margin: auto;
+    color: #fff;
   }
 
   article,
@@ -982,7 +984,8 @@ nav,
     margin-top: 40px;
   }
 
-  .cta__container {
+  .cta__container-index {
+    display: flex;
     width: 320px;
     margin-top: 30px;
   }
@@ -1387,10 +1390,6 @@ nav,
     justify-content: center;
     align-items: flex-start;
     height: 930px;
-  }
-
-  .header__researchers-desktop {
-    height: 500px;
   }
 
   .astronaut__img-desktop {
