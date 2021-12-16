@@ -40,8 +40,14 @@
           >
         </div>
         <div class="nav__search">
-          <img src="/assets/search-icon.png" alt="Search" />
-          <p>Search</p>
+          <label for="search__desktop" class="label__flex"
+            ><img src="/assets/search-icon.png" alt="Search" class="search__desktop-img" />
+            <p>Search</p></label
+          >
+          <input type="checkbox" name="search__desktop" id="search__desktop" />
+          <div class="search__container">
+            <input type="search" name="search" class="search__icon" />
+          </div>
         </div>
       </nav>
       <article class="headsection__desktop headsection__get">
