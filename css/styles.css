@@ -962,6 +962,9 @@ nav,
 
   .label__flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
   }
 
   #search__desktop {
